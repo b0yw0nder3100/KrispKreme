@@ -20,7 +20,7 @@ const reducer = (state, action) => {
     throw new Error("no matching type")
 }
 
-const defaultstates = {
+export const defaultstates = {
     donuts: data,
     count: 0
 }
@@ -65,8 +65,8 @@ const Landingpage = () => {
 
                     <div className="two">
                         <div className="food-packs">
-                            <img src={state.donuts[state.count].img} alt="pack1" className="food" />
-                            <img src={add} alt="pack1" className="add" onClick={addtocart} />
+                            <img src={state.donuts[state.count].img} alt="pack1" className="food" data-testid="donutpack-image"  />
+                            <img src={add} alt="pack1" className="add" onClick={addtocart} data-testid="next-btn"/>
                         </div>
                     </div>
 
@@ -84,7 +84,7 @@ const Landingpage = () => {
                         </div>
                         <div className="order-menu total">
                             <p>Total</p>
-                            <h6>₦{state.donuts[state.count].price}</h6>
+                            <h6 data-testid="donutpack-price">₦{state.donuts[state.count].price}</h6>
                         </div>
                         <div className="order-menu order">
                             <button>Order Now</button>
