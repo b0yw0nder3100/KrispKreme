@@ -2,7 +2,7 @@
 import ReactDom from "react-dom";
 import './index.css';
 import React from 'react'
-import logo from './Assets/logo.png'
+import App from './App'
 import one from './Assets/1.png'
 import two from './Assets/2.png'
 import three from './Assets/3.png'
@@ -13,34 +13,8 @@ import add from './Assets/add.png'
 const Index = () => {
     return (
         <>
-            <Header></Header>
-            <Main></Main>
+            <App></App>
         </>
-    )
-}
-
-const Header = () => {
-    return (
-        <header>
-            <nav>
-                <div className="nav-section-one">
-                    <img src={logo} alt="lgog"></img>
-                </div>
-
-                <div className="nav-section-two">
-                    <ul>
-                        <li>Home</li>
-                        <li>Menu</li>
-                        <li>Delivery</li>
-                    </ul>
-                </div>
-
-                <div className="nav-section-three">
-                    <i class="fas fa-phone-alt"></i>
-                    <i class="fas fa-shopping-cart"></i>
-                </div>
-            </nav>
-        </header>
     )
 }
 
@@ -95,7 +69,7 @@ const Main = () => {
                         </div>
                         <div className="order-menu total">
                             <p>Total</p>
-                            <h6>#3,400</h6>
+                            <h6>₦3,400</h6>
                         </div>
                         <div className="order-menu order">
                             <button>Order Now</button>
