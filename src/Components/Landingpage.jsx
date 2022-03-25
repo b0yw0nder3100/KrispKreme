@@ -1,24 +1,11 @@
+import one from '../Assets/1.png'
+import two from '../Assets/2.png'
+import three from '../Assets/3.png'
+import four from '../Assets/4.png'
+import pack1 from '../Assets/pack2.png'
+import add from '../Assets/add.png'
 
-import ReactDom from "react-dom";
-import './index.css';
-import React from 'react'
-import App from './App'
-import one from './Assets/1.png'
-import two from './Assets/2.png'
-import three from './Assets/3.png'
-import four from './Assets/4.png'
-import pack1 from './Assets/pack1.png'
-import add from './Assets/add.png'
-
-const Index = () => {
-    return (
-        <React.Fragment>
-            <App></App>
-        </React.Fragment>
-    )
-}
-
-const Main = () => {
+const Landingpage = () => {
     return (
         <main>
             <section className="hero-section">
@@ -81,4 +68,4 @@ const Main = () => {
     )
 }
 
-ReactDom.render(<Index />, document.getElementById('root'));
+export default Landingpage;

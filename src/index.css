@@ -108,7 +108,7 @@ nav {
   flex-basis: 100%;
 }
 .hero-section-one {
-  padding: 155px 0 0 152px;
+  padding: 140px 0 0 152px;
 }
 .hero-section-text h1 {
   font-size: 100px;
@@ -130,14 +130,15 @@ nav {
   overflow: hidden;
 }
 .food {
-  width: 70%;
-  top: -230px;
+  width: 85%;
+  top: -60px;
+  left: -60px;
   position: absolute;
 }
 .add {
-  top: 150px;
-  right: 160px;
-  width: 10%;
+  top: 140px;
+  right: 240px;
+  width: 7%;
   position: absolute;
   cursor: pointer;
 }
@@ -171,6 +172,7 @@ input {
   font-weight: 400;
   outline: none;
   padding: 0 0px;
+  margin-bottom: 10px;
 }
 input {
   width: 55px;
@@ -180,10 +182,12 @@ h6 {
   color: var(--grey);
   font-weight: 400;
   border-bottom: 1px solid var(--grey2);
+  margin-bottom: 10px;
 }
 .order-menu p {
   font-size: 20px;
-  padding: 0 0 15px 0;
+  margin-top: 7px;
+  padding: 0 0 35px 0;
   color: var(--grey2);
 }
 .order-menu {
